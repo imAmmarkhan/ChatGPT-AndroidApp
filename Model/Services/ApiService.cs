@@ -33,11 +33,11 @@ namespace Model.Services
                     }
                 }
             };
-            var response = client.Send(request);
+            var response = await client.SendAsync(request);
             response.EnsureSuccessStatusCode();
             var body = await response.Content.ReadAsStringAsync();
             Root root = JsonConvert.DeserializeObject<Root>(body);
-            return root;
+            return  root;
             
         }
     }

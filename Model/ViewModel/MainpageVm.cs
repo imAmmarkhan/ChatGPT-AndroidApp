@@ -36,14 +36,11 @@ namespace Model.ViewModel
 
             var TempResult = new Root();
             TempResult = Results;
-            if(TempResult!=null)
-            {
 
-            }
 
-            //Answer = "Answer is \n" + Results.Text;
-            //ChatGPTModel = Results.Model;
-            //StopReasson = Results.FinishReason;
+            Answer = "Answer is \n" + Results.Text;
+            ChatGPTModel = Results.Model;
+            StopReasson = Results.FinishReason;
         }
     }
 }
